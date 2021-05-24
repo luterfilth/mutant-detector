@@ -27,7 +27,7 @@ El proyecto esta desarrollado con las siguientes herramientas:
 
 Descargar el proyecto por medio de Github
 ```
-git clone
+git clone git@github.com:luterfilth/mutant-detector.git
 ```
 
 
