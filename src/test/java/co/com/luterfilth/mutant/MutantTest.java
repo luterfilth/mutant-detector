@@ -42,7 +42,7 @@ public class MutantTest {
 		HttpHeaders headers = new HttpHeaders();
 		headers.setContentType(MediaType.APPLICATION_JSON);
 
-		String jsonDNA = "{\n 'dna':['ATGCGA', 'CAGTGC', 'TTATGT', 'AGAAGG', 'CCCCTA', 'TCACTG'] \n}";
+		String jsonDNA = "{ \"dna\":[\"ATGCGA\",\"CAGTGC\",\"TTATGT\",\"AGAAGG\",\"CCCCTA\",\"TCACTG\"] }";
 
 		HttpEntity<String> request = new HttpEntity<>(jsonDNA, headers);
 
@@ -59,7 +59,7 @@ public class MutantTest {
 		HttpHeaders headers = new HttpHeaders();
 		headers.setContentType(MediaType.APPLICATION_JSON);
 
-		String jsonDNA = "{\n 'dna':['AAACCC', 'CCCGGG', 'GGGTTT', 'TTTAAA', 'AAACCC', 'CCCGGG'] \n}";
+		String jsonDNA = "{ \"dna\":[\"AAACCC\",\"CCCGGG\",\"GGGTTT\",\"TTTAAA\",\"AAACCC\",\"CCCGGG\"] }";
 
 		HttpEntity<String> request = new HttpEntity<>(jsonDNA, headers);
 
@@ -76,7 +76,7 @@ public class MutantTest {
 		HttpHeaders headers = new HttpHeaders();
 		headers.setContentType(MediaType.APPLICATION_JSON);
 
-		String jsonDNA = "{\n 'dna':['AAACCC', 'CCCGGG', 'GGGTTT', 'TTTAAA', 'AAACCC'] \n}";
+		String jsonDNA = "{ \"dna\":[\"ATGCGA\",\"CAGTGC\",\"TTATGT\",\"AGAAGG\",\"CCCCTA\"] }";
 
 		HttpEntity<String> request = new HttpEntity<>(jsonDNA, headers);
 

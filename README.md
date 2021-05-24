@@ -47,7 +47,8 @@ Si deseas desplegar en Google debes tener una proyecto con App Engine y ejecutas
 ```
 clean package appengine:deploy
 ```
-
+URL de prueba en App Engine
+https://mutant-314514.rj.r.appspot.com
 
 # Ejecución 
 
@@ -60,7 +61,7 @@ El sistema cuenta con el siguiente API Rest
 
 
 Para más información, puede descargar el siguiente archivo de Postman y verificar la estructurá.
-https://www.getpostman.com/collections/eb0c0c10ad30803e47fa
+https://www.postman.com/collections/eb0c0c10ad30803e47fa
 
 
 # Referencias

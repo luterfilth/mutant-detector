@@ -121,8 +121,11 @@ public class MutantService implements IMutantService {
 					requestDNA.stream().filter(dna -> dna.getIsMutant()).collect(Collectors.toList()).size());
 			statsRepresentation.setCountHumanDNA(
 					requestDNA.stream().filter(dna -> !dna.getIsMutant()).collect(Collectors.toList()).size());
-			statsRepresentation.setRatio(
-					Double.valueOf((statsRepresentation.getCountMutantDNA() / statsRepresentation.getCountHumanDNA())));
+			if (statsRepresentation.getCountHumanDNA() > 0 && statsRepresentation.getCountMutantDNA() > 0) {
+				statsRepresentation.setRatio(Double
+						.valueOf((statsRepresentation.getCountMutantDNA() / statsRepresentation.getCountHumanDNA())));
+			}
+
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
